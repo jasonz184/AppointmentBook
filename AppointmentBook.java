@@ -1,12 +1,35 @@
 public class AppointmentBook
 {
+
+private int[][] appoint;
+
+public AppointmentBook(int[][] values)
+{
+    appoint = values;
+}
+
+public String toString()
+    {
+        String s = "";
+        for (int row = 0; row < appoint.length; row++)
+        {
+            for (int col = 0; col < appoint[0].length; col++)
+            {
+                s += appoint[row][col] + " ";
+            }
+            s += "\n";
+        }
+        return s;
+    }
 /**
 * Returns true if minute in period is available for an appointment and returns
 * false otherwiseAppointmentBook.java
 * Preconditions: 1 <= period <= 8; 0 <= minute <= 59
 */
 private boolean isMinuteFree(int period, int minute)
-{ /* implementation not shown */ }
+{
+    
+}
 /**
 * Marks the block of minutes that starts at startMinute in period and
 * is duration minutes long as reserved for an appointment
