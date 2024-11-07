@@ -2,15 +2,13 @@ public class Main
 {
     public static void main(String[] args)
     {
-        int[][] nums = {
-            {0, 10, 0},
-            {10, 5, 1},
-            {15, 15, 0},
-            {30, 15, 1},
-            {45, 5, 0},
-            {50, 10, 1}
-        };
-        AppointmentBook x = new AppointmentBook(nums);
-        System.out.println(x);
+        boolean[][] schedule = new boolean[8][60];
+        AppointmentBook a = new AppointmentBook(schedule);
+        System.out.println(a);
+        for(int i = 10; i < 15; i++) schedule[1][i] = true;
+        for(int i = 30; i < 45; i++) schedule[1][i] = true;
+        for(int i = 50; i < 60; i++) schedule[1][i] = true;
+
+        a.findFreeBlock(2, 15);
     }
 }
