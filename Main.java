@@ -8,6 +8,10 @@ public class Main
         for(int i = 10; i < 15; i++) schedule[1][i] = true;
         for(int i = 30; i < 45; i++) schedule[1][i] = true;
         for(int i = 50; i < 60; i++) schedule[1][i] = true;
-        a.findFreeBlock(2, 15);
+        a.printPeriod(2);
+        System.out.println("Test cases: ");
+        System.out.println(a.findFreeBlock(2, 15));
+        System.out.println(a.findFreeBlock(2, 9));
+        System.out.println(a.findFreeBlock(2, 20));
     }
 }
