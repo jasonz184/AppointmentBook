@@ -26,6 +26,5 @@ public class Main
         AppointmentBook d = new AppointmentBook(schedule);
         d.printPeriod(2);
         System.out.println(d.makeAppointment(2, 4, 30));
-        d.printPeriod(2);
     }
 }
